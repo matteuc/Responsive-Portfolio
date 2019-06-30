@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dddddd;
+    position: relative;
+    margin: 0px;
+    background: url('../images/papyrus-filter.png') center fixed;
+    min-height: 700px;
+    overflow: auto;
+    width: 100vw;
+}
+
+.main_header {
+
+    background-color: white;
+    z-index: 2;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0% 15% 0% 15%;
+    margin: auto;
+    overflow: hidden;
+    float: left;
+    display: block;
+    /* margin-right: 15%; */
+    /* width: 100vw; */
+    /* width: 100%; */
+}
+
+.main_header_content {
+    height: 70px;
+    /* min-width: 800px; */
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    background-color: #4aaaa5;
+    color: white;
+    margin-bottom: 0%;
+    padding: 15px;
+}
+
+#about_link,
+#portfolio_link {
+    float: right;
+    font-size: 15px;
+    border-right: 1px solid #cccccc;
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+
+#contact_link {
+    float: right;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+
+a:link.header_link,
+a:visited.header_link,
+a:hover.header_link,
+a:active.header_link {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:hover.header_link {
+    background-color: #777777;
+    color: white;
+    border-bottom: 10px solid #3bd3cb;
+}
+
+.page_title {
+    color: #4aaaa5;
+    padding: 2px 0px 10px 0px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.main_content {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    bottom: 130px;
+    left: 15%;
+    right: 15%;
+    padding: 2% 5% 15% 5%;
+    /* width: 72vw; */
+    /* min-width: 800px; */
+    min-width:70%;
+    /* height: 500px; */
+    overflow: auto;
+    margin: auto;
+}
+
+.footer {
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 100px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 500px;
+    margin: 0.1px;
+    overflow: hidden;
+
+}
+
+img {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.form {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 5px;
+
+}
+
+textarea {
+    width: 100%;
+    overflow-wrap: break-word;
+    height: 12em;
+}
+
+.submit {
+    margin: 5px 15px 5px 0px;
+    float: left;
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 8px;
+    border: 0px solid white;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777777;
+}
+
+.left_column {
+    float: left;
+    width: 40%;
+    /* min-width: 200px; */
+    min-height: 350px;
+    padding: 0% 5% 0% 5%;
+    overflow: auto;
+    margin: 0% 0% 0% 10%;
+}
+
+.right_column {
+    float: right;
+    width: 40%;
+    /* min-width: 200px; */
+    min-height: 350px;
+    padding: 0% 5% 0% 5%;
+    overflow: auto;
+    margin: 0% 10% 0% 0%;
+}
+
+.photo_frame {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.photo_frame img {
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: 60%;
+}
+
+.image_label {
+    position: absolute;
+    top: 50%;
+    background-color: #4aaaa5;
+    color: white;
+    width: 80%;
+    padding: 2%;
+
+}
+
+a.image_link {
+    color: white;
+    text-decoration: none;
+}
+
+p:hover.image_label {
+    background-color: #3bd3cb;
+}
+
+
+@media screen and (max-width: 640px) {
+    .main_header {
+        height: 120px;
+        /* min-width: 800px; */
+    }
+    
+    .name {
+        float: none;
+        clear: right;
+        text-align: center;
+        top: 0px;
+        bottom: 50px ;
+        left: 30%;
+        right: 30%;
+    }
+
+    #about_link,
+    #portfolio_link, 
+    #contact_link {
+        width: 33%;
+        bottom:-40px;   
+        margin-top: 40px; 
+        text-align: center;
+    }
+    
+
+    .main_content {
+        top: 130px;
+        height: 60%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    img {
+        clear: both;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .left_column,
+    .right_column {
+        float: none;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+
+    }
+
+    .photo_frame {
+        left: 10%;
+    }
+}
